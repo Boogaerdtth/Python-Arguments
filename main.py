@@ -6,11 +6,24 @@ __human_name__ = 'arguments'
 def greet(name = 'You'):
 	print(f"Hey {name}, what's up?") 
 
-#greet('Bob')
-#greet()
+greet('Bob')
+greet()
+
+# .replace() 
+greet2 = "Hey John, what's up?"
+other_name = greet2.replace('John','Romana')
+print(other_name)
 
 #2
-def force(mass = 1, body = 'earth'):
+planets = {'earth': 9.8, 'jupiter': 24.9, 'neptunes': 11.15, 'saturnus': 10.44, 'uranus': 8.87,\
+	'venus': 8.87, 'mars': 3.71, 'mercurius': 3.7, 'pluto': 0.58 }
+
+def force2(mass = 2, body = planets['earth']):
+  body = planets['jupiter']
+  print(mass * body)
+force2()
+
+def force():
 	body = {'earth': 9.8, 'jupiter': 24.9, 'neptunes': 11.15, 'saturnus': 10.44, 'uranus': 8.87, \
 	'venus': 8.87, 'mars': 3.71, 'mercurius': 3.7, 'pluto': 0.58 }
 	planet_input = input("What kind of planet? ")
