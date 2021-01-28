@@ -14,6 +14,12 @@ greet2 = "Hey John, what's up?"
 other_name = greet2.replace('John','Romana')
 print(other_name)
 
+def greet3(name = "You"):
+  greeting = "Hey " + name + " what's up"
+  other_name = greeting.replace("You", "Bert")
+  print(other_name)
+greet3()
+
 #2
 planets = {'earth': 9.8, 'jupiter': 24.9, 'neptunes': 11.15, 'saturnus': 10.44, 'uranus': 8.87,\
 	'venus': 8.87, 'mars': 3.71, 'mercurius': 3.7, 'pluto': 0.58 }
