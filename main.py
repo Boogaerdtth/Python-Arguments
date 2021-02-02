@@ -20,6 +20,12 @@ def greet3(name = "You"):
   print(other_name)
 greet3()
 
+def greet4(name="You", template="Hello <name>"):
+  greeting = template.replace('<name>', name)
+  print(greeting)
+
+greet4('Harry')
+
 #2
 planets = {'earth': 9.8, 'jupiter': 24.9, 'neptunes': 11.15, 'saturnus': 10.44, 'uranus': 8.87,\
 	'venus': 8.87, 'mars': 3.71, 'mercurius': 3.7, 'pluto': 0.58 }
